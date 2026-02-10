@@ -335,6 +335,6 @@ document.addEventListener("mouseup", countPrankAction);
 
 /* BUTTON LANJUT */
 lanjutBtn.addEventListener("click", () => {
-  window.location.href = "/TRIAL/HBD/index.html";
+  showPage("gamePage");
 
 });
