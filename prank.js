@@ -1,4 +1,5 @@
-if (!document.getElementById("prankModal")) return;
+function initPrank() {
+  if (!document.getElementById("prankModal")) return;
 
 gsap.registerPlugin(
   Observer,
@@ -338,3 +339,6 @@ lanjutBtn.addEventListener("click", () => {
   showPage("hbdPage");
 
 });
+}
+
+initPrank();
