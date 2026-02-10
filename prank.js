@@ -335,5 +335,6 @@ document.addEventListener("mouseup", countPrankAction);
 
 /* BUTTON LANJUT */
 lanjutBtn.addEventListener("click", () => {
-  window.location.href = "../HBD/index.html";
+  window.location.href = "/TRIAL/HBD/index.html";
+
 });
