@@ -1,0 +1,402 @@
+/* Ganti semua CSS body kamu dengan ini */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #252432; 
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh; /* Satu layar penuh untuk Kue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Section khusus untuk Kue */
+#cake {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.candle {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 484px;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: in 500ms 6s ease-out forwards;
+          animation: in 500ms 6s ease-out forwards;
+  z-index: 10;
+}
+.candle:after,
+.candle:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.candle:after {
+  top: 25%;
+  left: 0;
+}
+.candle:before {
+  top: 45%;
+  left: 0;
+}
+.fire {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fire:nth-child(1) {
+  -webkit-animation: fire 2s 6.5s infinite;
+          animation: fire 2s 6.5s infinite;
+}
+.fire:nth-child(2) {
+  -webkit-animation: fire 1.5s 6.5s infinite;
+          animation: fire 1.5s 6.5s infinite;
+}
+.fire:nth-child(3) {
+  -webkit-animation: fire 1s 6.5s infinite;
+          animation: fire 1s 6.5s infinite;
+}
+.fire:nth-child(4) {
+  -webkit-animation: fire 0.5s 6.5s infinite;
+          animation: fire 0.5s 6.5s infinite;
+}
+.fire:nth-child(5) {
+  -webkit-animation: fire 0.2s 6.5s infinite;
+          animation: fire 0.2s 6.5s infinite;
+}
+@-webkit-keyframes fire {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@keyframes fire {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@-webkit-keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+.text {
+  color: #d1d1d1;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.text h1 {
+  font-size: 1.4em;
+}
+
+
+#envelope {
+  z-index: 20;
+    position: relative;
+    height: 180px;
+    width: 280px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff2a22;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#envelope:hover {
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 3;
+}
+
+.flap {
+    border-top: 98px solid #ff2a22;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 82px solid transparent;
+    transform-origin: top;
+}
+
+.pocket {
+    border-left: 140px solid #ff748d;
+    border-right: 140px solid #ff748d;
+    border-bottom: 90px solid #ff98a7;
+    border-top: 90px solid transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.letter {
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 2px 26px rgba(0, 0, 0, .12);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.letter:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.words {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 14%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.line1 {
+    top: 15%;
+}
+.line2 {
+    top: 30%;
+}
+.line3 {
+    top: 50%;
+    text-align: center;
+}
+.line4 {
+    top: 65%;
+    text-align: center;
+}
+
+.open .flap {
+    transform: rotatex(180deg);
+    transition: transform 0.4s ease, z-index 0.6s;
+    z-index: 1;
+}
+
+.close .flap {
+    transform: rotatex(0deg);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 5;
+}
+
+.open .letter {
+    transform: translatey(-120px);
+    transition: transform 0.4s 0.6s ease, z-index 0.6s;
+    z-index: 2;
+}
+
+.close .letter {
+    transform: translatey(0deg);
+    transition: transform 0.4s ease, z-index 1s;
+    z-index: 1;
+}
+
+.balloon-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.balloon,
+.butterfly {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -80px;
+  width: 30px;
+  height: 45px;
+  border-radius: 50%;
+  animation: floatUp linear infinite;
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 1.5px;
+  height: 20px;
+  background: #555;
+}
+
+.butterfly {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  animation: flyUp linear infinite;
+}
+
+.butterfly::before,
+.butterfly::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 25px;
+  background: linear-gradient(45deg, #8fd3f4, #84fab0);
+  border-radius: 50%;
+}
+
+.butterfly::before {
+  left: 0;
+  transform-origin: right;
+  animation: flap 0.6s infinite;
+}
+
+.butterfly::after {
+  right: 0;
+  transform-origin: left;
+  animation: flap 0.6s infinite reverse;
+}
+
+
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+}
+
+@keyframes flyUp {
+    from {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-600px) translateX(80px);
+        opacity: 0;
+    }
+}
+
+@keyframes flap {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(40deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+
+.reset {
+    text-align: center;
+}
+
+.reset button {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #FF6863;
+    border-radius: 4px;
+    color: #FF6863;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 110px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+}
+
+.reset button:hover {
+    background-color: #FF6863;
+    cursor: pointer;
+    color: white;
+}
+
+.valentine {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(20, 20, 20);
+    font-size: 30px;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* CAKE SCENE */
+section:first-of-type {
+  background: #252432;
+}
+
+/* ENVELOPE SCENE */
+.envelope-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  background: #252432;
+}
+
+.reset {
+    margin-top: 20px;
+    z-index: 30;
+}
