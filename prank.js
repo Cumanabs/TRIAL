@@ -335,6 +335,6 @@ document.addEventListener("mouseup", countPrankAction);
 
 /* BUTTON LANJUT */
 lanjutBtn.addEventListener("click", () => {
-  showPage("gamePage");
+  showPage("hbdPage");
 
 });
