@@ -9,6 +9,7 @@ const mulaiBtn = document.getElementById("mulaiBtn");
 
 if (mulaiBtn) {
   mulaiBtn.addEventListener("click", () => {
-    window.location.href = "./Game-BGK/index.html";
+    window.location.href = "/TRIAL/Game-BGK/index.html";
+
   });
 }
