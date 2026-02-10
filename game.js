@@ -93,7 +93,8 @@ optionImages.forEach((image, index) => {
 
 // tombol lanjut
 continueBtn.addEventListener("click", () => {
-  window.location.href = "../Prank/index.html";
+  window.location.href = "/TRIAL/Prank/index.html";
+
 });
 
 // tombol coba lagi
