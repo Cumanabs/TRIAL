@@ -93,7 +93,7 @@ optionImages.forEach((image, index) => {
 
 // tombol lanjut
 continueBtn.addEventListener("click", () => {
-  window.location.href = "/TRIAL/Prank/index.html";
+  showPage("gamePage");
 
 });
 
