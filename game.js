@@ -93,7 +93,7 @@ optionImages.forEach((image, index) => {
 
 // tombol lanjut
 continueBtn.addEventListener("click", () => {
-  showPage("gamePage");
+  showPage("prankPage");
 
 });
 
